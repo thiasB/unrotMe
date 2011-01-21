@@ -1,0 +1,30 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\begin{document}
+\begin{align*}
+  \varphi_r &=\arcsin
+  \left(
+    \sin\varphi_g\sin\varphi_g^N+
+    \cos\varphi_g\cos\varphi_g^N\cos\left(\lambda_g-\lambda_g^N\right)
+  \right)\\
+  \lambda_r &=\arctan
+  \left(
+    \frac
+    {\cos\varphi_g\sin\left(\lambda_g-\lambda_g^N\right)}
+    {\cos\varphi_g\sin\varphi_g^N\cos\left(\lambda_g-\lambda_g^N\right)
+    -\sin\varphi_g\cos\varphi_g^N}
+  \right)\\\\
+  \varphi_g &=\arcsin
+  \left(
+    \sin\varphi_r\sin\varphi_g^N+
+    \cos\varphi_r\cos\lambda_r\cos\varphi_g^N
+  \right)\\
+  \lambda_g &=\arctan
+  \left(
+    \frac
+    {\cos\varphi_r\sin\lambda_r}
+    {\sin\varphi_g^N\cos\varphi_r\cos\lambda_r
+    -\sin\varphi_r\cos\varphi_g^N}
+  \right)  +\lambda_g^N
+\end{align*}
+\end{document}
